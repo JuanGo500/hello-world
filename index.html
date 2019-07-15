@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Business Intelligence and Innovation</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6321497-8', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+    /* ésto comprueba la localStorage si ya tiene la variable 
+    guardada */ 
+    function compruebaAceptaCookies() {
+        if(localStorage.aceptaCookies == ‘true’){
+            cajacookies.style.display = ‘none’;
+        }
+    }
+    
+    /* aquí guardamos la variable de que se ha
+    aceptado el uso de cookies así no mostraremos
+    el mensaje de nuevo */
+    function aceptarCookies() {
+        localStorage.aceptaCookies = ‘true’;
+        cajacookies.style.display = ‘none’;
+    }
+    
+    /* ésto se ejecuta cuando la web está cargada */
+    $(document).ready(function () {
+        compruebaAceptaCookies();
+    });
+</script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="index.html"><span class="intelligent">Intelligent</span><span class="conta">Conta</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li>
+                        <a href="about.html">Sobre nosotros</a>
+                    </li>-->
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacto</a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/intelligentconta">Blog</a>
+                        <!--ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    
+    <!-- Image Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                
+                <img src="img/Main.png" class="mainImage">
+            </div>
+        </div>
+        
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+        
+        
+
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Cuadros de Mando en la Nube
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-bar-chart fa1"></i> Ventas</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Detalle ventas por línea de negocio y producto</li>
+                            <li>Precios y margen medio por categoría</li>
+                            <li>Gamificación de equipos de venta</li>
+                        </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-pie-chart fa1"></i> Marketing</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                        <li>Combinación de fuentes de datos de mercado y ventas de la empresa</li>
+                            <li>Análisis del impacto de acciones de marketing</li>
+                            <li>Seguimiento del coste de campañas</li>
+                            </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-cogs fa1"></i> Operaciones</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                        <li>Desglose del número de operaciones por líneas de negocio</li>
+                            <li>Costes medios de producción</li>
+                            <li>Análisis de proyectos de inversión</li>
+                            </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+         <!-- Row 2 -->
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-credit-card fa1"></i> Finanzas</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Análisis de balance, cuenta de resultados y cash-flow</li>
+                            <li>Seguimiento del coste de inversiones</li>
+                            <li>Consolidación contable</li>
+                        </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-laptop fa1"></i> IT</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                        <li>KPIs del departamento IT</li>
+                            <li>Seguimiento repositorios ITIL</li>
+                            <li>Cálculo del Total Cost of Ownership</li>
+                            </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-users fa1"></i> Recursos humanos</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                        <li>Número de empleados por centro de trabajo</li>
+                            <li>Análisis de rotación de puestos de trabajo</li>
+                            <li>Seguimiento de evaluaciones</li>
+                            </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Rows 3. Verticals -->
+        <div class="row" >
+            
+          
+            
+            
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-paper-plane-o fa2"></i> Drone Startup</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Visión de operaciones, facturación y coste</li>
+                            <li>Control de equipos</li>
+                            <li>Control de pruebas</li>
+                        </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-table fa2"></i> Empresa de Big Data</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                        <li>Arquitectura para reventa de datos</li>
+                            <li>Diseño de modelos de datos</li>
+                            <li>Control de resultados</li>
+                            </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3><i class="fa fa-gamepad fa2"></i> Game Studio</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                        <li>Descarga de apps</li>
+                            <li>Ratios de conversión</li>
+                            <li>Monetización, ARPU y LTV</li>
+                            </ul>
+                        <div class="botonCentrado"><a href="contact.html" class="btn btn-default btn1" class="botonCentrado">más...</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <hr>
+
+        <!-- Call to Action Section -->
+        
+        
+            <div class="row">
+                <div class="col-md-12">
+                  <!-- Change the width and height values to suit you best -->
+<div class="typeform-widget" data-url="https://intelligentconta.typeform.com/to/gPupQW" data-text="Contact Form" style="width:100%;height:200px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"><a href="https://www.typeform.com/examples/forms/contact-form-template/?utm_campaign=gPupQW&amp;utm_source=typeform.com-3519915-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-contactform&amp;utm_term=EN" style="color: #999" target="_blank">Contact form</a>powered by Typeform</div>
+                </div>
+            </div>
+        
+
+        <hr>
+        
+        <div class="col-sm-6">
+        <a href="https://www.facebook.com/IntelligentConta-493187937547925/"><img class="socialmedialogo" src="img/LogoFacebook.png"></img></a>
+        <a href="https://twitter.com/intconta"><img class="socialmedialogo" src="img/LogoTwitter.png"></img></a>
+        
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; IntelligentConta 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+<!--EU COOKIE LAW-->
+<div id="barracookies">
+Si continúa navegando consideramos que acepta el uso de cookies.
+<br/>
+ <a href="javascript:void(0);" onclick="var expiration = new Date(); expiration.setTime(expiration.getTime() + (60000*60*24*365)); setCookie('avisocookies','1',expiration,'/');document.getElementById('barracookies').style.display='none';"><b>Estoy de acuerdo</b></a> <a href="http://www.google.com/intl/es-419/policies/technologies/types/" target="_blank" >Más información</a>
+</div>
+<!-- Estilo barra CSS -->
+<style>#barracookies {display: none;z-index: 99999;position:fixed;left:0px;right:0px;bottom:0px;width:100%;min-height:40px;padding:5px;background: lightGrey;color:black;line-height:20px;font-family:verdana;font-size:12px;text-align:center;box-sizing:border-box;} #barracookies a:nth-child(2) {padding:4px;background:darkGrey ;border-radius:5px;text-decoration:none;} #barracookies a {color: #fff;text-decoration: none;}</style>
+<!-- Gestión de cookies-->
+<script type='text/javascript'>function setCookie(name,value,expires,path,domain,secure){document.cookie=name+"="+escape(value)+((expires==null)?"":"; expires="+expires.toGMTString())+((path==null)?"":"; path="+path)+((domain==null)?"":"; domain="+domain)+((secure==null)?"":"; secure")}function getCookie(name){var cname=name+"=";var dc=document.cookie;if(dc.length>0){begin=dc.indexOf(cname);if(begin!=-1){begin+=cname.length;end=dc.indexOf(";",begin);if(end==-1)end=dc.length;return unescape(dc.substring(begin,end))}}return null}function delCookie(name,path,domain){if(getCookie(name)){document.cookie=name+"="+((path==null)?"":"; path="+path)+((domain==null)?"":"; domain="+domain)+"; expires=Thu, 01-Jan-70 00:00:01 GMT"}}</script>
+<!-- Gestión barra aviso cookies -->
+<script type='text/javascript'>
+var comprobar = getCookie("avisocookies");
+if (comprobar != null) {}
+else {
+var expiration = new Date();
+expiration.setTime(expiration.getTime() + (60000*60*24*365));
+setCookie("avisocookies","1",expiration);
+document.getElementById("barracookies").style.display="block"; }
+</script>
+
+    
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
+<!--http://startbootstrap.com/template-overviews/modern-business/-->
